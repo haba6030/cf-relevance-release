@@ -14,8 +14,11 @@ produced those CSVs are included as scripts with their exact commands (Section 4
 
 ## 1. Quick start: reproduce every number in the paper
 
+Anonymous mirror for review: https://anonymous.4open.science/r/cf-relevance-release-DB25/ (browse or download; the same
+files are attached to the submission as supplementary material).
+
 ```bash
-git clone <ANON-URL> && cd <repo>
+# unpack the supplementary zip or the mirror's download, then from its root:
 python3 -m pip install numpy pandas scipy scikit-learn matplotlib nbformat nbconvert jupyter
 python3 notebooks/build_notebooks.py --execute     # ~1 minute on a laptop, CPU only
 python3 notebooks/make_report.py                    # writes REPRODUCTION_REPORT.md
@@ -186,7 +189,7 @@ check. Each would need the activations or logs listed above.
 ## 6. Anonymity
 
 Paths, user names and the original repository URL were removed from every file before release (`<REPO>`, `<HOME>`,
-`<HF_CACHE>`, `<ANON-URL>` placeholders). Comments and generated reports were translated into English. The
+`<HF_CACHE>` placeholders). Comments and generated reports were translated into English. The
 `_release_manifest.json` lists every file copied from the working repository.
 
 ## 7. Licence
