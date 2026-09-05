@@ -21,7 +21,6 @@ files are attached to the submission as supplementary material).
 # unpack the supplementary zip or the mirror's download, then from its root:
 python3 -m pip install numpy pandas scipy scikit-learn matplotlib nbformat nbconvert jupyter
 python3 notebooks/build_notebooks.py --execute     # ~1 minute on a laptop, CPU only
-python3 notebooks/make_report.py                    # writes REPRODUCTION_REPORT.md
 ```
 
 The notebooks are also shipped **already executed**, so they can simply be opened:
@@ -36,10 +35,10 @@ The notebooks are also shipped **already executed**, so they can simply be opene
 | `notebooks/05_preregistered_grid.ipynb` | Appendices `app:grid`, `app:intervention`, `app:models`, deviations | the null of the preregistered grid and its geometry |
 
 Each notebook opens with a **source and code map** (paper number → CSV read → script that produced it) and ends with a
-table of reported vs produced values. `REPRODUCTION_REPORT.md` aggregates those tables; `REPRODUCTION_MANIFEST.md`
-is the full number → file → script index. As of this release: 135 of 175 checks reproduce to the printed precision,
-5 are seed-dependent bootstrap bounds within 0.01, 12 are qualitative or presence checks, 18 do not match exactly
-and 5 cannot be recomputed from the released files. The report lists each of the last two groups with a note.
+table of reported vs produced values. `notebooks/_checks_all.csv` collects those tables across the six notebooks, with
+one row per checked number. As of this release: 135 of 175 checks reproduce to the printed precision, 5 are
+seed-dependent bootstrap bounds within 0.01, 12 are qualitative or presence checks, 18 do not match exactly and 5
+cannot be recomputed from the released files. The last two groups carry a note in that file.
 
 ## 2. Layout
 

@@ -20,7 +20,7 @@ while not ((ROOT / "results").exists() and (ROOT / "additional_Qs").exists()):
         raise RuntimeError("run the notebooks from inside the release repository")
     ROOT = ROOT.parent
 
-# canonical run directories (see REPRODUCTION_MANIFEST.md)
+# canonical run directories
 RQ1 = ROOT / "results/rq1_spec_cached_20260821/analysis"            # 15-item behaviour and norms
 PCR = ROOT / "results/rq3_pcr_locked_20260825/analysis"             # 15-item prefix decomposition, decoding, separation
 GRID = ROOT / "results/rq3_intervention_final_20260827/analysis"    # 15-item preregistered intervention grid

@@ -21,10 +21,9 @@ HERE = Path(__file__).resolve().parent
 
 PROVENANCE = """> **Provenance.** Built with the `repro-notebook` workflow (one executed notebook per experiment,
 > every reported number checked against the produced one). Target paper: *Conversational Relevance in the
-> Conjunction Fallacy Is Represented in Language Models* (`docs/paper/main_A.tex` in the authors' working
+> Conjunction Fallacy Is Represented Independently in Language Models* (`docs/paper/main_A.tex` in the authors' working
 > repository; the released copy of the manuscript is the submission PDF). Companion documents:
-> `REPRODUCTION_MANIFEST.md` (paper number → source CSV → producing script) and `REPRODUCTION_REPORT.md`
-> (aggregated verdicts). Status legend: ✅ reproduced to the reported precision · ❌ does not match ·
+> `notebooks/_checks_all.csv` collects the verdicts of all six notebooks. Status legend: ✅ reproduced to the reported precision · ❌ does not match ·
 > ⚠ presence check only · ⛔ cannot be recomputed from the released files."""
 
 SETUP = """import sys, warnings
