@@ -1,0 +1,21 @@
+{
+  "analysis_version": "rq3-joint-r-pc-iut-canonical-h3-20260825",
+  "status": "complete",
+  "models": [
+    "Qwen/Qwen2.5-Math-1.5B",
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "google/gemma-3-4b-it",
+    "microsoft/Phi-4-mini-instruct",
+    "microsoft/Phi-4-mini-reasoning"
+  ],
+  "tasks_separate": true,
+  "contrast": "A(R,h3)-A(I,h3)",
+  "shared_pc": "fold-local PC1 of standardized delta-P and delta-C",
+  "directions": [
+    "R_perp_PC",
+    "PC_perp_R"
+  ],
+  "assumption": "P not perpendicular C: two-sided exact sign-flip covariance p<.05",
+  "iut": "max(raw p_R, raw p_PC, raw p_P_not_orthogonal_C); no Holm"
+}

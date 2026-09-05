@@ -1,0 +1,12 @@
+{
+  "eligible_models": [
+    "Qwen/Qwen2.5-Math-1.5B",
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "google/gemma-3-4b-it",
+    "microsoft/Phi-4-mini-instruct",
+    "microsoft/Phi-4-mini-reasoning"
+  ],
+  "rule": "EXPERIMENT_RQ3.md 5.0; strict across L2C and L3C",
+  "max_additivity_error": 1.7763568394002505e-15
+}

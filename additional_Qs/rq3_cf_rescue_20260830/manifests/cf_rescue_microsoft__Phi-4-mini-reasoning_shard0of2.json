@@ -1,0 +1,51 @@
+{
+  "stage": "rq3-cf-rescue-knockout",
+  "model": "microsoft/Phi-4-mini-reasoning",
+  "tasks": [
+    2,
+    3
+  ],
+  "shard_index": 0,
+  "num_shards": 2,
+  "limit": null,
+  "add_alphas": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "abl_doses": [
+    0.5,
+    1.0
+  ],
+  "qvar": 0,
+  "items_total": 165,
+  "selection": "opposite frame mean over six locked baseline qvars",
+  "evaluation": "other frame, fixed qvar; cross-swapped",
+  "directions": [
+    "R_given_PC",
+    "PC_given_R",
+    "random_R_given_PC",
+    "random_PC_given_R",
+    "shuffle_R_given_PC",
+    "shuffle_PC_given_R"
+  ],
+  "experiment_contract": "rq3-cf-rescue-knockout-crossframe-v1",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 15030,
+    "peak_device_nvidia_mib": 15039,
+    "peak_torch_allocated_mib": 14693.98779296875,
+    "peak_torch_reserved_mib": 14832.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

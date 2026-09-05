@@ -1,0 +1,191 @@
+{
+  "stage": "rq3-norming-activation",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "dtype": "float32",
+  "cpu_offload_allowed": true,
+  "elapsed_seconds": 1014.8239371776581,
+  "norming_rows": 540,
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "tasks": {
+    "2": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "task": 2,
+      "shape": [
+        15,
+        3,
+        5,
+        37,
+        2560
+      ],
+      "axis_order": [
+        "label",
+        "prefix",
+        "option",
+        "hidden_state",
+        "dimension"
+      ],
+      "labels": [
+        "chung-1",
+        "chung-2",
+        "chung-3",
+        "chung-4",
+        "ling-fix-1",
+        "ling-fix-2",
+        "ling-fix-4",
+        "llm-1",
+        "llm-2",
+        "llm-3",
+        "llm-4",
+        "llm-5",
+        "llm-6",
+        "llm-7",
+        "llm-8"
+      ],
+      "prefixes": [
+        "N",
+        "I",
+        "R"
+      ],
+      "options": [
+        "base",
+        "conj_h2",
+        "conj_h3",
+        "bare_h2",
+        "bare_h3"
+      ],
+      "hidden_state_definition": "0=embedding output; l>=1=decoder block output",
+      "read_position": "last token of attached option",
+      "cell_variant_count": 12,
+      "prompt_contract": "rq3-v2-raw-sequence-20260825",
+      "dtype": "float32",
+      "prompt_final_shape": [
+        15,
+        3,
+        37,
+        2560
+      ],
+      "prompt_final_definition": "last token before attached option; averaged over 12 variants",
+      "variant_sd_norm_summary": {
+        "mean": 16.872255325317383,
+        "median": 8.105737686157227,
+        "max": 105.11277770996094
+      },
+      "prompt_variant_sd_norm_summary": {
+        "mean": 33.705238342285156,
+        "median": 15.154502868652344,
+        "max": 185.5648193359375
+      },
+      "behavior_crosscheck": {
+        "rows": 540,
+        "max_abs_logprob_difference": 1.4210854715202004e-14,
+        "mean_abs_logprob_difference": 7.440961427265493e-16,
+        "token_count_mismatches": 0
+      },
+      "activation_forward_batch_drift": {
+        "task": 2,
+        "rows": 540,
+        "max_abs_logprob_difference": 0.0003662109375,
+        "mean_abs_logprob_difference": 4.9112108018663194e-05,
+        "token_count_mismatches": 0
+      }
+    },
+    "3": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "task": 3,
+      "shape": [
+        15,
+        3,
+        5,
+        37,
+        2560
+      ],
+      "axis_order": [
+        "label",
+        "prefix",
+        "option",
+        "hidden_state",
+        "dimension"
+      ],
+      "labels": [
+        "chung-1",
+        "chung-2",
+        "chung-3",
+        "chung-4",
+        "ling-fix-1",
+        "ling-fix-2",
+        "ling-fix-4",
+        "llm-1",
+        "llm-2",
+        "llm-3",
+        "llm-4",
+        "llm-5",
+        "llm-6",
+        "llm-7",
+        "llm-8"
+      ],
+      "prefixes": [
+        "N",
+        "I",
+        "R"
+      ],
+      "options": [
+        "base",
+        "conj_h2",
+        "conj_h3",
+        "bare_h2",
+        "bare_h3"
+      ],
+      "hidden_state_definition": "0=embedding output; l>=1=decoder block output",
+      "read_position": "last token of attached option",
+      "cell_variant_count": 12,
+      "prompt_contract": "rq3-v2-raw-sequence-20260825",
+      "dtype": "float32",
+      "prompt_final_shape": [
+        15,
+        3,
+        37,
+        2560
+      ],
+      "prompt_final_definition": "last token before attached option; averaged over 12 variants",
+      "variant_sd_norm_summary": {
+        "mean": 20.491823196411133,
+        "median": 9.729305267333984,
+        "max": 106.60736083984375
+      },
+      "prompt_variant_sd_norm_summary": {
+        "mean": 40.29969024658203,
+        "median": 19.506179809570312,
+        "max": 182.9915313720703
+      },
+      "behavior_crosscheck": {
+        "rows": 540,
+        "max_abs_logprob_difference": 7.105427357601002e-15,
+        "mean_abs_logprob_difference": 7.302800339756585e-16,
+        "token_count_mismatches": 0
+      },
+      "activation_forward_batch_drift": {
+        "task": 3,
+        "rows": 540,
+        "max_abs_logprob_difference": 0.00030517578125,
+        "mean_abs_logprob_difference": 4.742728339301215e-05,
+        "token_count_mismatches": 0
+      }
+    }
+  },
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 16378,
+    "peak_device_nvidia_mib": 16387,
+    "peak_torch_allocated_mib": 15746.947265625,
+    "peak_torch_reserved_mib": 16180.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

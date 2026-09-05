@@ -1,0 +1,18 @@
+{
+  "eligible_models": [
+    "Qwen/Qwen2.5-Math-1.5B",
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "google/gemma-3-4b-it",
+    "microsoft/Phi-4-mini-instruct",
+    "microsoft/Phi-4-mini-reasoning"
+  ],
+  "rule": "EXPERIMENT_RQ3.md 5.0; strict across L2C and L3C",
+  "max_additivity_error": 7.105427357601002e-15,
+  "signflip_method": {
+    "exact_up_to_n": 20,
+    "monte_carlo_samples": 200000,
+    "seed": 20260824,
+    "note": "Above exact_up_to_n items a Monte Carlo approximation replaces the exact sign-flip test. The canonical 15-item run is exact."
+  }
+}

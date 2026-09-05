@@ -1,0 +1,12 @@
+{
+  "contract": "rq3-0830-edit-norming-manipulation-check-v1",
+  "theta": 0.25,
+  "primary": "per-strength P&C IUT without multiplicity correction",
+  "multiplicity": "none; joint IUT p=max(P raw p,C raw p)",
+  "seed": 20260902,
+  "shards": 1485,
+  "rows": 295272,
+  "item_effect_rows": 12924,
+  "test_rows": 150,
+  "joint_rows": 25
+}

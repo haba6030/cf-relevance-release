@@ -1,0 +1,12 @@
+{
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "device": "cuda:0",
+  "dtype": "float16",
+  "batch_size": 16,
+  "offline": true,
+  "n_items": 15,
+  "logprob_rows": 720,
+  "forcedchoice_rows": 3600,
+  "norming_rows": 180,
+  "elapsed_seconds": 169.66916728019714
+}

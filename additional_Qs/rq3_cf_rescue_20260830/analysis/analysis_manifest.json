@@ -1,0 +1,10 @@
+{
+  "input_rows": 58458,
+  "shards": 1980,
+  "raw_p_no_holm": true,
+  "hypothesis_count": 120,
+  "signflip_mc": 200000,
+  "seed": 20260830,
+  "inferential_unit": "item; two cross-frame estimates averaged within label",
+  "fluency_threshold": "all 165 target folds have PPL increase < 10%"
+}

@@ -1,0 +1,8 @@
+model_id,model,task2_full_iut_p,task3_full_iut_p,model_iut_p,both_tasks_pass
+Qwen/Qwen2.5-Math-1.5B,Qwen2.5-Math-1.5B,0.95330810546875,0.95330810546875,0.95330810546875,False
+Qwen/Qwen3-4B,Qwen3-4B,0.017486572265625,0.017730712890625,0.017730712890625,True
+Qwen/Qwen3-4B-Instruct-2507,Qwen3-4B-Instruct-2507,0.162078857421875,0.328216552734375,0.328216552734375,False
+deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B,DeepSeek-R1-Distill-Qwen-1.5B,0.937774658203125,0.986785888671875,0.986785888671875,False
+google/gemma-3-4b-it,gemma-3-4b-it,0.025848388671875,0.01800537109375,0.025848388671875,True
+microsoft/Phi-4-mini-instruct,Phi-4-mini-instruct,0.007293701171875,0.014923095703125,0.014923095703125,True
+microsoft/Phi-4-mini-reasoning,Phi-4-mini-reasoning,0.99945068359375,0.99945068359375,0.99945068359375,False

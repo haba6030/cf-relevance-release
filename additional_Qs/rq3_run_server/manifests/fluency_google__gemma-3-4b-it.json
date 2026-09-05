@@ -1,0 +1,42 @@
+{
+  "stage": "rq3-fluency",
+  "model": "google/gemma-3-4b-it",
+  "tokens": 1000,
+  "baseline_ppl": 17.550090068926153,
+  "folds_per_task": 165,
+  "aggregation": "worst increase; all folds must pass",
+  "decoder_gate_file": "additional_Qs/rq3_run_server/analysis/rq3a_context_decoder_robustness.csv",
+  "gate_family": "conjunction_h3",
+  "direction_mode": "h3_subspace",
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "subspace_k": 2,
+  "random_subspaces": 2,
+  "ablate_scope": "selected",
+  "abl_doses": [
+    1.0
+  ],
+  "alphas": [
+    0.5,
+    1.0
+  ],
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "runtime_contract": "rq3-selected-layer-equivalent-v1",
+  "fold_batch": 2,
+  "runtime_direction_set": "primary10",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 22820,
+    "peak_device_nvidia_mib": 22829,
+    "peak_torch_allocated_mib": 22416.05126953125,
+    "peak_torch_reserved_mib": 22768.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

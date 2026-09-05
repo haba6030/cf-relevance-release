@@ -1,0 +1,15 @@
+{
+  "context_prefix": "R",
+  "seed": 20260824,
+  "monte_carlo_draws": 200000,
+  "n_items": 165,
+  "models": [
+    "Qwen/Qwen2.5-Math-1.5B",
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "google/gemma-3-4b-it",
+    "microsoft/Phi-4-mini-instruct",
+    "microsoft/Phi-4-mini-reasoning"
+  ],
+  "note": "Item provenance, models and screening differ from the canonical 15-item run. Generalisation, not replication."
+}

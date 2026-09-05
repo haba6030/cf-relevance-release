@@ -1,0 +1,32 @@
+id,section,analysis,reported,produced,status,source,note
+B1,Results ¶5,"held-out AUC h3, 15 items",0.704,+0.7037,✅,results/rq3_pcr_locked_20260825/analysis/rq3a_context_decoder_robustness.csv,
+B1,Results ¶5,"h3 cells passing the gate, 15 items",12/12,12/12,✅,,
+B1,Results ¶5,"h2 control cells passing, 15 items",1/12,1/12,✅,,
+B1,Results ¶5,"h1 (base) control cells passing, 15 items",3/12,3/12,✅,,
+B1,Results ¶5,"held-out AUC h3, 165 items",0.803,+0.8031,✅,additional_Qs/rq3_run_server/analysis/rq3a_context_decoder_robustness.csv,
+B1,Results ¶5,all cells pass at 165 items (gate saturates),48/48,48/48,✅,,
+B1,Results ¶5,lowest AUC that still passes at 165 items,0.516,+0.5164,✅,,
+B2,Results ¶5,"gap over h2, 15 items",+0.194,+0.1937,✅,results/rq3_pcr_locked_20260825/analysis/rq3a_specificity_gap_summary.csv,
+B2,Results ¶5,"gap over h2, 15 items: CI low",+0.146,+0.1463,✅,,
+B2,Results ¶5,"gap over h2, 15 items: CI high",+0.252,+0.2519,✅,,
+B2,Results ¶5,"gap over h2, 165 items",+0.233,+0.2327,✅,additional_Qs/rq3_run_server/analysis/rq3a_specificity_gap_summary.csv,
+B2,Results ¶5,"gap over h2, 165 items: CI low",+0.176,+0.1756,✅,,
+B2,Results ¶5,"gap over h2, 165 items: CI high",+0.283,+0.2830,✅,,
+B2,Results ¶5,"gap over h1, 15 items",+0.189,+0.1893,✅,,
+B2,Results ¶5 / app:large,"gap over h1, 165 items",+0.213,+0.2127,✅,,
+B2,Appendix app:large,"gap over h1, 165 items: CI low",+0.168,+0.1676,✅,,
+B2,Appendix app:large,"gap over h1, 165 items: CI high",+0.248,+0.2475,✅,,
+B2,Fig. 2b caption,no model-level gap interval includes zero,true,True,⚠,,presence check; not a numeric match
+B3,Results ¶6,"R|PC decodable, 15 items",12/12,12/12,✅,results/rq3_pcr_locked_20260825/analysis/joint_r_pc_iut_no_holm/component_tests.csv,
+B3,Results ¶6,"PC|R decodable, 15 items",6/12,6/12,✅,,
+B3,Results ¶6,"R|PC decodable, 165 items",12/12,12/12,✅,additional_Qs/rq3_run_server/analysis/joint_r_pc_iut_no_holm/component_tests.csv,
+B3,Results ¶6,"PC|R decodable, 165 items",10/12,10/12,✅,,
+B4,Results ¶6,"norm of v_R removed by the P–C plane, 165 items",76%,76.2,✅,additional_Qs/rpc_vector_control/cells.csv,
+B4,Results ¶6,"norm of v_R removed by the P–C plane, 15 items (six models)",67%,67.0,✅,,
+B4,Discussion ¶3,"norm of v_PC held by v_R, 165 items",72%,72.1,✅,,
+B4,Appendix app:deviations 4,squared share (58 % of squared norm quoted in working notes),0.58,+0.581,✅,,working-note value; the paper quotes the norm share
+B5,Fig. S1a,mean AUC over the twelve cells from cached held-out scores,0.704,+0.7037,✅,docs/paper/figs/paper2/figS1_decoding_scores.csv,
+B5,Fig. S1c,"not decodable in the first fifth, decodable from mid depth",qualitative,"decodable share: first fifth 0.56, mid depth 1.00",⚠,,presence check; not a numeric match
+E6,Deviation 8,Phi-4-mini-reasoning split-half reliability of Δρ,0.409,+0.4090,✅,results/rq3_pcr_locked_20260825/analysis/rq3x_norming_quality_locked_20260825.csv,
+E6,Deviation 8,Phi-4-mini-reasoning split-half reliability of ΔC,0.193,+0.1931,✅,,
+E6,Deviation 8,only Phi-4-mini-reasoning falls below the 0.6 floor,one model,Phi-4-mini-reasoning,⚠,,presence check; not a numeric match

@@ -1,0 +1,11 @@
+model,task,stage,direction,strengths,effects,sign_ok,monotone
+Phi-4-mini-instruct,2,ADD,R_given_PC,"[0.5, 1.0]","[0.1357, 0.2403]",True,True
+Phi-4-mini-instruct,3,ADD,R_given_PC,"[0.5, 1.0]","[0.1254, 0.2053]",True,True
+Phi-4-mini-reasoning,3,ABL,R_given_PC,"[0.5, 1.0]","[-0.0429, -0.0906]",True,True
+Qwen2.5-Math-1.5B,2,ABL,PC_given_R,"[0.5, 1.0]","[-0.004, -0.0094]",True,True
+Qwen2.5-Math-1.5B,3,ADD,R_given_PC,"[0.5, 1.0]","[0.0227, 0.0376]",True,True
+Qwen3-4B,2,ABL,PC_given_R,[0.5],[-0.0502],True,True
+Qwen3-4B,3,ABL,R_given_PC,"[0.5, 1.0]","[-0.0067, -0.0126]",True,True
+Qwen3-4B,3,ADD,PC_given_R,"[0.5, 1.0]","[0.0177, 0.0403]",True,True
+Qwen3-4B-Instruct-2507,2,ADD,PC_given_R,"[0.5, 1.0]","[0.0264, 0.0477]",True,True
+Qwen3-4B-Instruct-2507,3,ADD,PC_given_R,"[0.5, 1.0]","[0.0278, 0.0489]",True,True

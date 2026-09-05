@@ -1,0 +1,28 @@
+id,section,analysis,reported,produced,status,source,note
+C1,Results ¶7,passing model × task × stage × direction combinations,10/10,10/10,✅,additional_Qs/cf_rescue_reanalysis/monotonicity.csv,count of combinations passing at some strength
+C1,Results ¶7,predicted sign,10/10,10/10,✅,,
+C1,Results ¶7,dose-monotone,10/10,10/10,✅,,
+C1,Results ¶7,constrained random / shuffled control cells passing every gate,0/240,0/240,✅,additional_Qs/cf_rescue_fluency_posthoc/cells_annotated.csv,
+C2,Results ¶7,distinct models among the passing combinations,5/6,5/6,✅,,
+C2,Results ¶7,models passing ADD and ABL on the same direction,0/7,1/7,❌,,"Qwen3-4B passes ADD PC|R in task 3 and ABL PC|R in task 2: the statement holds within a task cell, not per model"
+C2,Results ¶7,model × task cells passing ADD and ABL on the same direction,0/10,0/10,✅,,
+C7,Table tab:models,"passing cells, Qwen3-4B",3/10,3/10,✅,,
+C7,Table tab:models,"passing cells, Qwen3-4B-Instruct-2507",2/10,2/10,✅,,
+C7,Table tab:models,"passing cells, Qwen2.5-Math-1.5B",2/10,2/10,✅,,
+C7,Table tab:models,"passing cells, gemma-3-4b-it",0/10,0/10,✅,,
+C7,Table tab:models,"passing cells, Phi-4-mini-instruct",2/10,2/10,✅,,
+C7,Table tab:models,"passing cells, Phi-4-mini-reasoning",1/10,1/10,✅,,
+C3,Results ¶7,"12-cell mean ΔCF, ADD R|PC α=1",-0.073,-0.0728,✅,additional_Qs/cf_rescue_reanalysis/means_by_pass.csv,
+C3,Results ¶7,"passing-cell mean ΔCF, ADD R|PC α=1",+0.161,+0.1610,✅,,
+C3,Results ¶7,"cells moving against the prediction, ADD R|PC α=1",8/12,8/12,✅,additional_Qs/cf_rescue_fluency_posthoc/cells_annotated.csv,
+C4,Results ¶7,ADD α=2 cells under the fluency threshold,0/24,0/24,✅,additional_Qs/cf_rescue_fluency_posthoc/ladder.csv,
+C4,Results ¶7,ADD α=2 cells passing on effect alone (post hoc),4/24,4/24,✅,,
+C4,Results ¶7,PPL increase at α=2 over the four cells that pass on effect alone,11.6–37.5,11.6–37.5,✅,,over all 24 target cells the range is 11.6–500% (Gemma and Phi-4-mini-reasoning collapse)
+C4,Results ¶7,"PC|R rises to α=2, R|PC peaks at α=1 (passing injections)",qualitative,PC|R argmax α=2; R|PC argmax α=1,⚠,,presence check; not a numeric match
+C5,Results ¶7,Gemma target cells failing specificity,16/20,17/20,❌,additional_Qs/cf_rescue_fluency_posthoc/cells_annotated.csv,"spec = both paired specificity p-values < .05; the stored table gives 3 passing cells, the paper says 4"
+C5,Results ¶7,largest PPL ratio at λ=1 (Gemma),2718,2718.0,✅,additional_Qs/cf_rescue_fluency_posthoc/ladder.csv,"ppl_max is the fold increase minus one; reported as ×2,718"
+C6,Table tab:cfgrid,"rows reproduced to the printed precision (passed, mean all, mean passing, fluency)",10/10,10/10,✅,additional_Qs/rq3_cf_rescue_20260830/analysis/cf_rescue_knockout_summary.csv,mismatching rows: none
+C7,Table tab:cfpass,rows whose ΔCF range matches the printed one,8/8,8/8,✅,additional_Qs/cf_rescue_fluency_posthoc/cells_annotated.csv,
+C7,Table tab:cfpass,rows whose PPL range matches the printed one,8/8,5/8,❌,,"mismatches: Qwen3-4B ABL, Qwen3-4B ABL, Qwen2.5-Math-1.5B ADD"
+C8,Fig. S2a caption,injection combinations (model × task) passing at some strength,6/6,6/6,✅,additional_Qs/cf_rescue_reanalysis/monotonicity.csv,
+C9,Appendix app:cf,items per stage and cell,45–131,45–131,✅,additional_Qs/rq3_cf_rescue_20260830/analysis/cf_rescue_knockout_tests.csv,

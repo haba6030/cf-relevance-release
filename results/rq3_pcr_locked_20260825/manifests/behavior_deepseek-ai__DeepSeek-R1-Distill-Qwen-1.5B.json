@@ -1,0 +1,35 @@
+{
+  "stage": "rq3-behavior",
+  "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+  "dtype": "float32",
+  "cpu_offload_allowed": true,
+  "n_items": 15,
+  "labels": "all",
+  "prefixes": [
+    "N",
+    "I",
+    "R"
+  ],
+  "rows": 1080,
+  "batch_size": 16,
+  "elapsed_seconds": 112.70745754241943,
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 7666,
+    "peak_device_nvidia_mib": 7675,
+    "peak_torch_allocated_mib": 7150.916015625,
+    "peak_torch_reserved_mib": 7468.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  },
+  "offline": true,
+  "stimuli_sha256": "3cd24e18e959c212608012ece4ef1c288b2eebb4993fd7b927d087e5ea841764",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825"
+}

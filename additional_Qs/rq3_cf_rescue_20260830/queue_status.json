@@ -1,0 +1,273 @@
+{
+  "state": "complete",
+  "stage": "complete",
+  "started_at": "2026-08-30T05:02:58+09:00",
+  "finished_at": "2026-08-30T07:48:37+09:00",
+  "experiment_contract": "rq3-cf-rescue-knockout-crossframe-v1",
+  "models": [
+    "Qwen/Qwen2.5-Math-1.5B",
+    "Qwen/Qwen3-4B",
+    "Qwen/Qwen3-4B-Instruct-2507",
+    "microsoft/Phi-4-mini-instruct",
+    "microsoft/Phi-4-mini-reasoning",
+    "google/gemma-3-4b-it"
+  ],
+  "devices": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "max_gpu_mib": 24000,
+  "num_shards": 2,
+  "eta_hours": 3.8,
+  "jobs": [
+    {
+      "model": "google/gemma-3-4b-it",
+      "shard": 0,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T05:02:58+09:00",
+      "finished_at": "2026-08-30T05:24:04+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/google__gemma-3-4b-it_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B",
+      "shard": 0,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T05:02:58+09:00",
+      "finished_at": "2026-08-30T05:26:54+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen3-4B_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "shard": 0,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T05:02:58+09:00",
+      "finished_at": "2026-08-30T05:25:10+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen3-4B-Instruct-2507_shard0.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-reasoning",
+      "shard": 0,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T05:02:58+09:00",
+      "finished_at": "2026-08-30T05:24:40+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/microsoft__Phi-4-mini-reasoning_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Math-1.5B",
+      "shard": 0,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T05:24:04+09:00",
+      "finished_at": "2026-08-30T05:34:15+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen2.5-Math-1.5B_shard0.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "shard": 0,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T05:24:40+09:00",
+      "finished_at": "2026-08-30T05:46:30+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/microsoft__Phi-4-mini-instruct_shard0.log"
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "shard": 1,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T05:25:10+09:00",
+      "finished_at": "2026-08-30T05:45:17+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/google__gemma-3-4b-it_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B",
+      "shard": 1,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T05:26:54+09:00",
+      "finished_at": "2026-08-30T05:49:35+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen3-4B_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "shard": 1,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T05:34:15+09:00",
+      "finished_at": "2026-08-30T05:55:30+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen3-4B-Instruct-2507_shard1.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-reasoning",
+      "shard": 1,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T05:45:17+09:00",
+      "finished_at": "2026-08-30T06:05:21+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/microsoft__Phi-4-mini-reasoning_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Math-1.5B",
+      "shard": 1,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T05:46:30+09:00",
+      "finished_at": "2026-08-30T05:56:29+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/Qwen__Qwen2.5-Math-1.5B_shard1.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "shard": 1,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T05:49:35+09:00",
+      "finished_at": "2026-08-30T06:10:25+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/microsoft__Phi-4-mini-instruct_shard1.log"
+    }
+  ],
+  "guard_jobs": [
+    {
+      "model": "google/gemma-3-4b-it",
+      "shard": 0,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T06:10:25+09:00",
+      "finished_at": "2026-08-30T06:38:45+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_google__gemma-3-4b-it_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B",
+      "shard": 0,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T06:10:25+09:00",
+      "finished_at": "2026-08-30T06:46:44+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen3-4B_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "shard": 0,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T06:10:25+09:00",
+      "finished_at": "2026-08-30T06:43:33+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen3-4B-Instruct-2507_shard0.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-reasoning",
+      "shard": 0,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T06:10:25+09:00",
+      "finished_at": "2026-08-30T06:40:56+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_microsoft__Phi-4-mini-reasoning_shard0.log"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Math-1.5B",
+      "shard": 0,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T06:38:45+09:00",
+      "finished_at": "2026-08-30T06:51:02+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen2.5-Math-1.5B_shard0.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "shard": 0,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T06:40:56+09:00",
+      "finished_at": "2026-08-30T07:11:03+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_microsoft__Phi-4-mini-instruct_shard0.log"
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "shard": 1,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T06:43:33+09:00",
+      "finished_at": "2026-08-30T07:10:53+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_google__gemma-3-4b-it_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B",
+      "shard": 1,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T06:46:44+09:00",
+      "finished_at": "2026-08-30T07:20:23+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen3-4B_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "shard": 1,
+      "state": "complete",
+      "device": 0,
+      "started_at": "2026-08-30T06:51:02+09:00",
+      "finished_at": "2026-08-30T07:21:35+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen3-4B-Instruct-2507_shard1.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-reasoning",
+      "shard": 1,
+      "state": "complete",
+      "device": 2,
+      "started_at": "2026-08-30T07:10:53+09:00",
+      "finished_at": "2026-08-30T07:37:55+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_microsoft__Phi-4-mini-reasoning_shard1.log"
+    },
+    {
+      "model": "Qwen/Qwen2.5-Math-1.5B",
+      "shard": 1,
+      "state": "complete",
+      "device": 3,
+      "started_at": "2026-08-30T07:11:03+09:00",
+      "finished_at": "2026-08-30T07:22:54+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_Qwen__Qwen2.5-Math-1.5B_shard1.log"
+    },
+    {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "shard": 1,
+      "state": "complete",
+      "device": 1,
+      "started_at": "2026-08-30T07:20:23+09:00",
+      "finished_at": "2026-08-30T07:47:20+09:00",
+      "exit_code": 0,
+      "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/guard_microsoft__Phi-4-mini-instruct_shard1.log"
+    }
+  ],
+  "analysis": {
+    "exit_code": 0,
+    "log": "<REPO>/additional_Qs/rq3_cf_rescue_20260830/logs/analysis.log"
+  },
+  "error": null
+}

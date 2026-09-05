@@ -1,0 +1,55 @@
+id,section,analysis,reported,produced,status,source,note
+A1,Results ¶1,"DoD R|N positive, 15 items",12/12,12/12,✅,logprob_cell_tests.csv,
+A1,Results ¶1,"DoD R|N Holm-significant, 15 items",12/12,12/12,✅,,
+A1,Results ¶1,"mean DoD R|N conj, 15 items",0.313,+0.3125,❌,,"exact mean 0.31246, which rounds to 0.312; Results ¶1 prints 0.313 and Table tab:decomp prints 0.312"
+A1,Results ¶1,"DoD R|N Holm-significant, 165 items",12/12,12/12,✅,h1_cell_tests_165.csv,
+A1,Results ¶1,"mean DoD R|N conj, 165 items",0.356,+0.3560,✅,,
+A9,Discussion ¶1,banks agree to within 0.05 DoD (165 − 15),0.05,+0.050,✅,,"|difference| = 0.044, within the stated 0.05"
+A2,Results ¶1,"worst LOIO fold still p<.05, 15 items",12/12,12/12,✅,logprob_cell_tests.csv,
+A3,Results ¶1,"DoD R|I Holm-significant, 15 items",12/12,12/12,✅,results/rq3_pcr_locked_20260825/analysis/h30_tests.csv,
+A3,Results ¶1,"DoD I|N Holm-significant, 15 items",0/12,0/12,✅,,
+A3,Results ¶1,"relevance share of full effect, 15 items",58–85,58–85,✅,,
+A3,Table tab:decomp,"mean DoD R|I, 15 items",0.215,+0.2149,✅,,
+A3,Table tab:decomp,"mean DoD I|N, 15 items",0.097,+0.0975,✅,,
+A3,Table tab:decomp,"mean DoD R|N, 15 items",0.312,+0.3123,✅,,the paper prints 0.312 in the table and 0.313 in Results ¶1 for the same quantity
+A3,Results ¶1,"DoD R|I Holm-significant, 165 items",12/12,12/12,✅,additional_Qs/rq3_run_server/analysis/h30_tests.csv,
+A3,Results ¶1,"DoD I|N Holm-significant, 165 items",12/12,12/12,✅,,
+A3,Results ¶1,"relevance share of full effect, 165 items",33–56,33–56,✅,,
+A3,Table tab:decomp,"mean DoD R|I, 165 items",0.164,+0.1637,✅,,
+A3,Table tab:decomp,"mean DoD I|N, 165 items",0.192,+0.1923,✅,,
+A3,Table tab:decomp,"mean DoD R|N, 165 items",0.356,+0.3560,✅,,
+A4,Results ¶2,"bare > conj cells, 15 items",12/12,12/12,✅,logprob_cell_tests.csv,
+A4,Results ¶2,"mean bare-arm DoD, 15 items",1.156,+1.1556,✅,,
+A4,Results ¶2,"bare > conj cells, 165 items",12/12,12/12,✅,h1_cell_tests_165.csv,
+A4,Results ¶2,"mean bare-arm DoD, 165 items",1.091,+1.0912,✅,,
+A5,Results ¶3,"norm contrasts excluding zero, 15 items (bootstrap CI)",14/24,14/24,✅,norming_summary.csv,the t-based CI gives 13/24; the paper matches the bootstrap CI
+A5,Results ¶3,"norm contrasts excluding zero, 165 items",21/24,21/24,✅,h2a_tests_165.csv,
+A6,Results ¶4,"confounding rho, 15 items: mean ρ",-0.034,-0.0342,✅,results/rq1_spec_cached_20260821/analysis/norming_connections.csv,
+A6,Results ¶4,"confounding rho, 15 items: CI low",-0.114,-0.1140,✅,,
+A6,Results ¶4,"confounding rho, 15 items: CI high",+0.040,+0.0423,≈,,"seed-dependent bootstrap, within 0.01 of the reported bound"
+A6,Results ¶4,"confounding C, 15 items: mean ρ",+0.023,+0.0229,✅,results/rq1_spec_cached_20260821/analysis/norming_connections.csv,
+A6,Results ¶4,"confounding C, 15 items: CI low",-0.132,-0.1321,✅,,
+A6,Results ¶4,"confounding C, 15 items: CI high",+0.167,+0.1690,≈,,"seed-dependent bootstrap, within 0.01 of the reported bound"
+A7,Results ¶4,"mediation rho, 15 items: mean ρ",-0.276,-0.2762,✅,results/rq1_spec_cached_20260821/analysis/norming_connections.csv,
+A7,Results ¶4,"mediation rho, 15 items: CI low",-0.394,-0.3958,≈,,"seed-dependent bootstrap, within 0.01 of the reported bound"
+A7,Results ¶4,"mediation rho, 15 items: CI high",-0.177,-0.1801,≈,,"seed-dependent bootstrap, within 0.01 of the reported bound"
+A7,working notes only,"mediation C, 15 items (not in paper)","-0.080 [-0.243, +0.141]","-0.080 [-0.243, +0.141]",⚠,,presence check; not a numeric match
+A6,Results ¶4,"confounding rho, 165 items: mean ρ",-0.025,-0.0255,✅,additional_Qs/rq12_on_165/h2b_connections_165.csv,
+A6,Results ¶4,"confounding rho, 165 items: CI low",-0.091,-0.0929,≈,,"seed-dependent bootstrap, within 0.01 of the reported bound"
+A6,Results ¶4,"confounding rho, 165 items: CI high",+0.042,+0.0420,✅,,
+A6,Results ¶4,"confounding C, 165 items: mean ρ",+0.016,+0.0165,✅,additional_Qs/rq12_on_165/h2b_connections_165.csv,
+A6,Results ¶4,"confounding C, 165 items: CI low",-0.030,-0.0297,✅,,
+A6,Results ¶4,"confounding C, 165 items: CI high",+0.063,+0.0629,✅,,
+A7,Results ¶4,"mediation rho, 165 items: mean ρ",+0.080,+0.0799,✅,additional_Qs/rq12_on_165/h2b_connections_165.csv,
+A7,Results ¶4,"mediation rho, 165 items: CI low",+0.023,+0.0230,✅,,
+A7,Results ¶4,"mediation rho, 165 items: CI high",+0.145,+0.1450,✅,,
+A7,working notes only,"mediation C, 165 items (not in paper)","+0.094 [+0.053, +0.141]","+0.094 [+0.053, +0.142]",⚠,,presence check; not a numeric match
+A7,Results ¶4,"mediation ρ cells significant alone, 15 items",1/12,1/12,✅,,
+A7,Results ¶4,"mediation ρ cells significant alone, 165 items",2/12,2/12,✅,,
+A7,Results ¶4,"ρ² of mediation association, 15 items",0.10,+0.098,✅,,
+A7,Results ¶4,"ρ² of mediation association, 165 items",0.01,+0.013,✅,,
+A10,Appendix app:large,mediation rho: sign agrees across banks,1/6,1/6,✅,,
+A10,Appendix app:large,mediation C: sign agrees across banks,2/6,2/6,✅,,
+A10,Appendix app:large,every mediation interval overlaps its counterpart,yes,no,⚠,,presence check; not a numeric match
+A8,"Method, Inference",wording correlation over items (mean of six per-model Spearman ρ),.96,+0.929,❌,results/rq1_spec_cached_20260821/analysis/logprob_item_effects.csv,"median 0.95, pooled 0.92; Phi-4-mini-reasoning alone is 0.77. The .96 in the paper was quoted from the eight-model run"
+E9,Deviation 9,position-only predictability of the letter readout (all models in the run),66%,66.0,✅,results/rq1_spec_cached_20260821/analysis/position_gate.csv,"six-model mean 64.7%; predictability = max(accuracy, 1 − accuracy), i.e. after counterbalancing"

@@ -1,0 +1,41 @@
+{
+  "stage": "rq3-dis",
+  "model": "microsoft/Phi-4-mini-reasoning",
+  "tasks": [
+    3
+  ],
+  "items": [
+    "chung-1",
+    "chung-2",
+    "chung-3",
+    "chung-4",
+    "ling-fix-1",
+    "ling-fix-2",
+    "ling-fix-4"
+  ],
+  "alphas": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "decoder_gate_file": "<REPO>/results/rq3_guide_intervention_k2_20260827/analysis/rq3a_context_decoder_robustness.csv",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 14990,
+    "peak_device_nvidia_mib": 14999,
+    "peak_torch_allocated_mib": 14666.576171875,
+    "peak_torch_reserved_mib": 14792.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "0e3b1e2d02ee478a3743abe3f629e9c0cb722e0a",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "stage": "rq3-intervention",
+  "started_at": "2026-08-27T01:43:34+09:00",
+  "finished_at": null,
+  "gpu_ceiling_mib": 24000,
+  "models": {
+    "Qwen/Qwen2.5-Math-1.5B": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-27T01:43:34+09:00",
+      "gpu": "0",
+      "pid": 1887699,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_Qwen__Qwen2.5-Math-1.5B.log",
+      "finished_at": "2026-08-27T06:22:04+09:00",
+      "exit_code": 0
+    },
+    "Qwen/Qwen3-4B": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-27T01:43:34+09:00",
+      "gpu": "1",
+      "pid": 1887703,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_Qwen__Qwen3-4B.log",
+      "finished_at": "2026-08-27T14:40:35+09:00",
+      "exit_code": 0
+    },
+    "Qwen/Qwen3-4B-Instruct-2507": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-27T01:43:34+09:00",
+      "gpu": "2",
+      "pid": 1887746,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_Qwen__Qwen3-4B-Instruct-2507.log",
+      "finished_at": "2026-08-27T13:42:25+09:00",
+      "exit_code": 0
+    },
+    "google/gemma-3-4b-it": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-27T01:43:34+09:00",
+      "gpu": "3",
+      "pid": 1887794,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_google__gemma-3-4b-it.log",
+      "finished_at": "2026-08-27T13:04:15+09:00",
+      "exit_code": 0
+    },
+    "microsoft/Phi-4-mini-instruct": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-27T06:22:04+09:00",
+      "gpu": "0",
+      "pid": 1898804,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_microsoft__Phi-4-mini-instruct.log",
+      "finished_at": "2026-08-27T16:49:25+09:00",
+      "exit_code": 0
+    },
+    "microsoft/Phi-4-mini-reasoning": {
+      "state": "parallel_running",
+      "attempts": 1,
+      "started_at": "2026-08-27T13:04:15+09:00",
+      "gpu": "3",
+      "pid": 1907771,
+      "log": "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/intervention_microsoft__Phi-4-mini-reasoning.log"
+    }
+  },
+  "parallel_resume": {
+    "started_at": "2026-08-27T17:11:16+09:00",
+    "service": "rq3-guide-parallel-remaining-20260827.service",
+    "devices": ["0", "1", "2", "3"],
+    "method": "disjoint task-item shards; full 14-item LOIO training folds preserved",
+    "logs": [
+      "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/parallel_gpu0.log",
+      "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/parallel_gpu1.log",
+      "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/parallel_gpu2.log",
+      "<REPO>/results/rq3_guide_intervention_k2_20260827/logs/parallel_gpu3.log"
+    ]
+  }
+}

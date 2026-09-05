@@ -1,0 +1,106 @@
+{
+  "started_at": "2026-08-21T22:47:43+09:00",
+  "finished_at": "2026-08-21T23:03:03+09:00",
+  "pid": 1139198,
+  "condition": "EXPERIMENT_spec.md frozen grid; active15; CUDA fp16; L2/L3 x conjunction/bare x logprob/forced-choice; letter/content; norming",
+  "requested_count_text": 7,
+  "resolved_model_count": 8,
+  "count_note": "The explicit list contains eight models; all eight are queued.",
+  "devices": [
+    "0",
+    "1",
+    "2",
+    "3"
+  ],
+  "models": {
+    "Qwen/Qwen2.5-Math-1.5B": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:47:43+09:00",
+      "gpu": "0",
+      "pid": 1139208,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/Qwen__Qwen2.5-Math-1.5B.log",
+      "finished_at": "2026-08-21T22:52:13+09:00",
+      "exit_code": 0
+    },
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:47:43+09:00",
+      "gpu": "1",
+      "pid": 1139209,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/deepseek-ai__DeepSeek-R1-Distill-Qwen-1.5B.log",
+      "finished_at": "2026-08-21T22:52:33+09:00",
+      "exit_code": 0
+    },
+    "Qwen/Qwen3-4B": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:47:43+09:00",
+      "gpu": "2",
+      "pid": 1139210,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/Qwen__Qwen3-4B.log",
+      "finished_at": "2026-08-21T22:54:13+09:00",
+      "exit_code": 0
+    },
+    "Qwen/Qwen3-4B-Instruct-2507": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:47:43+09:00",
+      "gpu": "3",
+      "pid": 1139211,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/Qwen__Qwen3-4B-Instruct-2507.log",
+      "finished_at": "2026-08-21T22:56:33+09:00",
+      "exit_code": 0
+    },
+    "Qwen/Qwen3-4B-Thinking-2507": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:52:13+09:00",
+      "gpu": "0",
+      "pid": 1140124,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/Qwen__Qwen3-4B-Thinking-2507.log",
+      "finished_at": "2026-08-21T23:01:33+09:00",
+      "exit_code": 0
+    },
+    "microsoft/Phi-4-mini-instruct": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:52:33+09:00",
+      "gpu": "1",
+      "pid": 1140279,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/microsoft__Phi-4-mini-instruct.log",
+      "finished_at": "2026-08-21T23:00:53+09:00",
+      "exit_code": 0
+    },
+    "microsoft/Phi-4-mini-reasoning": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:54:13+09:00",
+      "gpu": "2",
+      "pid": 1140508,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/microsoft__Phi-4-mini-reasoning.log",
+      "finished_at": "2026-08-21T23:01:33+09:00",
+      "exit_code": 0
+    },
+    "google/gemma-3-4b-it": {
+      "state": "complete",
+      "attempts": 1,
+      "started_at": "2026-08-21T22:56:33+09:00",
+      "gpu": "3",
+      "pid": 1140783,
+      "log": "<REPO>/results/rq1_spec_cached_20260821/logs/google__gemma-3-4b-it.log",
+      "finished_at": "2026-08-21T23:03:03+09:00",
+      "exit_code": 0
+    }
+  },
+  "failure_count": 0,
+  "analysis": {
+    "state": "complete",
+    "started_at": "2026-08-21T23:03:03+09:00",
+    "log": "<REPO>/results/rq1_spec_cached_20260821/logs/analysis.log",
+    "finished_at": "2026-08-21T23:03:51+09:00",
+    "exit_code": 0
+  },
+  "state": "complete"
+}

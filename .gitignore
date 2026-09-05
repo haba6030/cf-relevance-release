@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# raw activations and per-item edit logs are never committed (see README, "What is not included")
+**/activations/
+**/shards/
+**/guard_shards/
+*.npy

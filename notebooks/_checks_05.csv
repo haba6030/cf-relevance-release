@@ -1,0 +1,43 @@
+id,section,analysis,reported,produced,status,source,note
+E1,Appendix app:intervention,ablation of v_R supports the hypothesis (adjudicated cells),1/10,1/10,✅,results/rq3_intervention_final_20260827/analysis/rq3b_abl_tests.csv,
+E1,Appendix app:intervention,injection of v_R supports the hypothesis (adjudicated cells),1/10,1/10,✅,results/rq3_intervention_final_20260827/analysis/rq3b_add_tests.csv,
+E1,Appendix app:intervention,"layer-matched ablation, mean ΔDoD over 10 cells (R_h3, λ=1)",+0.009,+0.0129,❌,,recomputed mean over the 10 model × task cells; the paper's +0.009 may average a different cell set
+E1,Appendix app:intervention,injection lowers the DoD in all four arms (range of arm means),-0.032–-0.019,-0.038–-0.025,❌,,all four arm means are negative; the printed range differs from the recomputed one
+E1,Appendix app:intervention,preregistered ablation cells clearing both guards (4 arms × 10 cells),0/40,0/40,✅,,
+E1,Appendix app:intervention,directions moving as predicted under layer-matched ablation are controls,2/2,2/3,❌,,"directions with ≥1 supported cell: C, R_h3, random_k2_00"
+E1,Appendix app:intervention,grid manipulation check for v_R: cells (10 ablation + 10 injection) with all four norm intervals containing zero,0/20,0/20,✅,results/rq3_intervention_final_20260827/analysis/rq3f_R_specificity.csv,
+E1,Appendix app:intervention,"C shift under ablation across v_R, h2, bare, v_P, v_C, span (range of direction means)",2.5–3.8,0.8–3.9,❌,,rq3f_abl_norming_tests.csv stores the P/C/PC ablation shifts on a different scale (means 0.8–1.2); the printed range is not recovered from the release
+E2,Appendix app:intervention,mean LOO cosine between the training axis and the held-out contrast,+0.271,+0.2708,✅,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,
+E2,Appendix app:intervention,the same cosine as an angle (degrees),74.3,+74.29,✅,,
+E2,Appendix app:intervention,folds where the axis falls on the opposite side,14/150,14/150,✅,,
+E2,Appendix app:intervention,the component an edit can move is a fifth of the contrast (capture at k=1),0.178,+0.1783,✅,,
+E3,Appendix table (k-sweep),capture at k=1,0.178,+0.1783,✅,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,
+E3,Appendix table (k-sweep),random capture at k=1,0.00039,+0.000363,❌,,the random column depends on the RNG stream; no stored file reproduces the printed random values
+E3,Appendix table (k-sweep),ratio at k=1,451,491.3,❌,,follows the random column
+E3,Appendix table (k-sweep),capture at k=2,0.212,+0.2042,❌,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,"the k=2 row in the paper (0.212, 219×) does not match the stored k=2 capture"
+E3,Appendix table (k-sweep),random capture at k=2,0.00097,+0.000753,❌,,the random column depends on the RNG stream; no stored file reproduces the printed random values
+E3,Appendix table (k-sweep),ratio at k=2,219,271.3,❌,,follows the random column
+E3,Appendix table (k-sweep),capture at k=5,0.242,+0.2420,✅,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,
+E3,Appendix table (k-sweep),random capture at k=5,0.00218,+0.002132,❌,,the random column depends on the RNG stream; no stored file reproduces the printed random values
+E3,Appendix table (k-sweep),ratio at k=5,111,113.5,❌,,follows the random column
+E3,Appendix table (k-sweep),capture at k=14,0.289,+0.2886,✅,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,
+E3,Appendix table (k-sweep),random capture at k=14,0.00592,+0.005725,❌,,the random column depends on the RNG stream; no stored file reproduces the printed random values
+E3,Appendix table (k-sweep),ratio at k=14,49,50.4,❌,,follows the random column
+E3,Appendix app:intervention,push direction cosine between k=1 and k=14,0.705,+0.7047,✅,,
+E5,Appendix app:intervention,Spearman ρ between capture and decoding AUC,+0.20,+0.200,✅,results/rq3_intervention_final_20260827/analysis/rq3x_subspace_k_k14_verify.csv,
+E5,Appendix app:intervention,its p value,0.58,+0.580,✅,,
+E5,Appendix app:intervention,lowest-capture cell: capture,0.073,+0.0730,✅,,
+E5,Appendix app:intervention,lowest-capture cell: AUC,0.711,+0.7111,✅,,
+E5,Appendix app:intervention,highest-capture cell: capture,0.279,+0.2787,✅,,
+E5,Appendix app:intervention,highest-capture cell: AUC,0.671,+0.6711,✅,,
+E4,Appendix app:intervention,variance decomposition of the ablation/injection effect (item × model share),20.8% / 24.4%; arm 0.04–0.11%,—,⛔,,no stored output or script located; would require the per-item edit tables rq3b_*_item_effects and a decomposition not in the release
+E7,Deviation 1,retired one-versus-three rank AUC,0.559 (6/12),—,⛔,,the retired gate file is not part of the canonical run; the value exists only in an internal notebook output
+E1,Appendix app:grid,"the manipulation check denominator ""20 cells"" and the ""+2.5 to +3.8"" range across six directions",0/20; +2.5 to +3.8,—,⛔,,partially reproduced above from rq3f_R_specificity.csv; the exact cell set of the printed statement is not recoverable from the release
+E11,Appendix app:grid,ablation directions,20/20,20/20,✅,results/rq3_intervention_final_20260827/analysis/rq3b_abl_tests.csv,
+E11,Appendix app:grid,injection directions,17/17,17/17,✅,results/rq3_intervention_final_20260827/analysis/rq3b_add_tests.csv,
+E11,Appendix app:grid,ablation doses λ,"{0.25, 0.5, 1.0}","[0.25, 0.5, 1.0]",⚠,,presence check; not a numeric match
+E11,Appendix app:grid,injection strengths α,"{0.5, 1, 2, 4}","[0.5, 1.0, 2.0, 4.0]",⚠,,presence check; not a numeric match
+E12,Appendix app:models,pinned library versions,torch 2.9.1 / transformers 4.57.1,2.9.1+cu128 / 4.57.1,⚠,,presence check; not a numeric match
+E8,Appendix app:models,GPU-hours of the preregistered grid,56 h over five models,—,⛔,,the shipped manifests record memory and versions but no wall-clock time
+E8,Appendix app:models,"peak GPU allocation (MiB / 1000, as printed)",18.8,+18.81,✅,,18808 MiB = 18.37 GiB; the paper divides MiB by 1000
+E12,Appendix app:models,pinned model revisions,"1cfa9a7, cdbee75, 4a83ca6, 093f9f3, cfbefac, 0e3b1e2",Qwen/Qwen2.5-Math-1.5B: 4a83ca6; Qwen/Qwen3-4B-Instruct-2507: cdbee75; Qwen/Qwen3-4B: 1cfa9a7; google/gemma-3-4b-it: 093f9f3; microsoft/Phi-4-mini-instruct: cfbefac; microsoft/Phi-4-mini-reasoning: 0e3b1e2,⚠,,presence check; not a numeric match

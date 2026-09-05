@@ -1,0 +1,35 @@
+{
+  "stage": "rq3-behavior",
+  "model": "Qwen/Qwen2.5-Math-1.5B",
+  "dtype": "float32",
+  "cpu_offload_allowed": true,
+  "n_items": 15,
+  "labels": "all",
+  "prefixes": [
+    "N",
+    "I",
+    "R"
+  ],
+  "rows": 1080,
+  "batch_size": 16,
+  "elapsed_seconds": 113.53610897064209,
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 6786,
+    "peak_device_nvidia_mib": 6795,
+    "peak_torch_allocated_mib": 6260.572265625,
+    "peak_torch_reserved_mib": 6588.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "4a83ca6e4526a4f2da3aa259ec36c259f66b2ab2",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  },
+  "offline": true,
+  "stimuli_sha256": "3cd24e18e959c212608012ece4ef1c288b2eebb4993fd7b927d087e5ea841764",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825"
+}

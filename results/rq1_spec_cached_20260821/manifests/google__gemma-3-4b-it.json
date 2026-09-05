@@ -1,0 +1,12 @@
+{
+  "model": "google/gemma-3-4b-it",
+  "device": "cuda:0",
+  "dtype": "float32",
+  "batch_size": 4,
+  "offline": true,
+  "n_items": 15,
+  "logprob_rows": 720,
+  "forcedchoice_rows": 3600,
+  "norming_rows": 180,
+  "elapsed_seconds": 1740.0924758911133
+}

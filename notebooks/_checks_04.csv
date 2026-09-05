@@ -1,0 +1,22 @@
+id,section,analysis,reported,produced,status,source,note
+D1,Results ¶8,R|PC: P and C both equivalent,8/12,8/12,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/norm_manipulation_joint_verdicts.csv,
+D1,Results ¶8,PC|R: P and C both move as predicted,0/13,0/13,✅,,
+D1,Results ¶8,R|PC ablation cells passing,5/5,5/5,✅,,
+D1,Results ¶8,R|PC failures that are injections at α≥1,4/4,4/4,✅,,
+D2,Results ¶8,"random directions equivalent at strength 1 (P and C tests, injection and ablation cells)",12/12,12/12,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/norm_manipulation_tests.csv,
+D2,Results ¶8,at strength 0.5 nothing moves the norms (target tests equivalent),10/10,10/10,✅,,
+D2,Results ¶8,at α=2 random directions move the norms too (equivalent tests),0/2,0/2,✅,,
+D2,Results ¶8,perplexity increase at α=2 (median over the 24 injection cells),35.7%,+35.71,✅,additional_Qs/cf_rescue_fluency_posthoc/ladder.csv,max 500% (Phi-4-mini-reasoning); the paper quotes the median
+D5,Results ¶8 / Discussion ¶2,"cos(v_R, v_P) = .335",.335,—,⛔,,not stored in any released CSV; would need the activations (not shipped)
+D3,Results ¶8,PC|R target cells where C rises as predicted,6/13,6/13,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/nonjoint_fig23b/fig23b_nonjoint_readouts.csv,
+D3,Results ¶8,Qwen3 injection cells where ρ moves against the prediction,9/9,9/9,✅,,
+D3,Results ¶8,random control cells passing the oriented test on C (separate readout),0/13,0/13,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/nonjoint_fig23b/fig23b_nonjoint_readouts.csv,"per-metric counts P 0, C 0; joint (both norms) 0"
+D3,Results ¶8,shuffle control cells passing the oriented test on C (separate readout),2/13,2/13,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/nonjoint_fig23b/fig23b_nonjoint_readouts.csv,"per-metric counts P 2, C 2; joint (both norms) 0"
+D4,Table tab:manip,strength cells in the table,25/25,25/25,✅,,
+D6,Table tab:manip caption,"margin δ_ρ, Qwen2.5-Math-1.5B",0.025,+0.0252,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/norm_manipulation_margins.csv,
+D6,Table tab:manip caption,"margin δ_C, Qwen2.5-Math-1.5B",0.009,+0.0090,✅,,
+D6,Table tab:manip caption,"margin δ_ρ, Qwen3-4B",0.218,+0.2178,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/norm_manipulation_margins.csv,
+D6,Table tab:manip caption,"margin δ_C, Qwen3-4B",0.118,+0.1182,✅,,
+D6,Table tab:manip caption,"margin δ_ρ, Qwen3-4B-Instruct-2507",0.285,+0.2845,✅,additional_Qs/rq3_norm_manipulation_20260902/analysis/norm_manipulation_margins.csv,
+D6,Table tab:manip caption,"margin δ_C, Qwen3-4B-Instruct-2507",0.257,+0.2572,✅,,
+D7,Deviation 6,θ=0.5 sensitivity margin was fixed; results not printed in the paper,"θ ∈ {0.25, 0.5}",θ values present in tests.csv: [0.25],⚠,,presence check; not a numeric match

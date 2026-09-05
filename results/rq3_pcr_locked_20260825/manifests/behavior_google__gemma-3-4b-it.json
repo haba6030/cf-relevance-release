@@ -1,0 +1,35 @@
+{
+  "stage": "rq3-behavior",
+  "model": "google/gemma-3-4b-it",
+  "dtype": "float32",
+  "cpu_offload_allowed": true,
+  "n_items": 15,
+  "labels": "all",
+  "prefixes": [
+    "N",
+    "I",
+    "R"
+  ],
+  "rows": 1080,
+  "batch_size": 16,
+  "elapsed_seconds": 272.8855628967285,
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 17708,
+    "peak_device_nvidia_mib": 17717,
+    "peak_torch_allocated_mib": 17037.5048828125,
+    "peak_torch_reserved_mib": 17510.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  },
+  "offline": true,
+  "stimuli_sha256": "3cd24e18e959c212608012ece4ef1c288b2eebb4993fd7b927d087e5ea841764",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825"
+}

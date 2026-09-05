@@ -1,0 +1,52 @@
+{
+  "stage": "rq3-cf-rescue-fluency",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "tasks": [
+    2,
+    3
+  ],
+  "shard_index": 1,
+  "num_shards": 2,
+  "limit": null,
+  "tokens": 1000,
+  "baseline_ppl": 7.345388886034161,
+  "wikitext_sha256": "413428c311d70417df523fc14d830311355886b5bf6b78324fba13b608e35e49",
+  "target_folds_per_task": 165,
+  "control_diagnostic_folds": [
+    0,
+    11,
+    23,
+    35,
+    46,
+    58,
+    70,
+    82,
+    93,
+    105,
+    117,
+    128,
+    140,
+    152,
+    164
+  ],
+  "threshold": "PPL increase < 10%; all target folds",
+  "experiment_contract": "rq3-cf-rescue-knockout-crossframe-v1",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 17360,
+    "peak_device_nvidia_mib": 17369,
+    "peak_torch_allocated_mib": 16515.8203125,
+    "peak_torch_reserved_mib": 17162.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

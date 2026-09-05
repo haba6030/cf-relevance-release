@@ -1,0 +1,44 @@
+{
+  "stage": "rq3-primary-intervention",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "tasks": [
+    2,
+    3
+  ],
+  "alphas": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "gpu_ceiling_mib": 24000,
+  "decoder_gate_file": "<REPO>/results/rq3_pcr_locked_20260825/analysis/rq3a_context_decoder_robustness.csv",
+  "gate_family": "conjunction_h3",
+  "direction_mode": "h3_subspace",
+  "subspace_k": 2,
+  "random_subspaces": 8,
+  "ablate_scope": "both",
+  "abl_doses": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 16104,
+    "peak_device_nvidia_mib": 16113,
+    "peak_torch_allocated_mib": 15622.5703125,
+    "peak_torch_reserved_mib": 15906.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

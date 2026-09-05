@@ -1,0 +1,38 @@
+{
+  "stage": "rq3-0830-edit-norming-manipulation-check",
+  "model": "microsoft/Phi-4-mini-instruct",
+  "tasks": [
+    2,
+    3
+  ],
+  "shard_index": 0,
+  "num_shards": 2,
+  "limit": null,
+  "items_total": 165,
+  "target_rows": 5,
+  "include_posthoc": true,
+  "theta_primary": 0.25,
+  "theta_sensitivity": 0.5,
+  "selection": "same cross-frame item-level ADD/ABL state as 0830",
+  "directions": "same fold_directions/seed/layer/scale as 0830; target+matched random+shuffle",
+  "norming": "RQ3-v2 raw-sequence prompts and rq3_run_server baseline used to train directions",
+  "recommendation_correction": "0901 document named legacy sim/run_norm15/additional_Qs/norming, but executed 0830 directions use rq3_run_server/norming under the RQ3-v2 contract",
+  "experiment_contract": "rq3-0830-edit-norming-manipulation-check-v1",
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 15978,
+    "peak_device_nvidia_mib": 15987,
+    "peak_torch_allocated_mib": 15098.41064453125,
+    "peak_torch_reserved_mib": 15780.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}

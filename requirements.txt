@@ -1,0 +1,19 @@
+# Pinned to the versions recorded in the run manifests (results/*/manifests/*.json):
+#   torch 2.9.1+cu128 · transformers 4.57.1 · CUDA 12.8 · one NVIDIA TITAN RTX (24 GB)
+# The CPU-only reproduction (notebooks/ and every analyze_*.py) needs only the second block.
+
+# --- GPU runs (behaviour, norming, activation extraction, intervention, manipulation check)
+torch==2.9.1
+transformers==4.57.1
+accelerate
+datasets            # analysis/rq3/fetch_wikitext_rq3.py only
+
+# --- analysis and notebooks (versions used to execute the shipped notebooks)
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+scikit-learn>=1.5
+matplotlib>=3.8
+nbformat>=5.10
+nbconvert>=7.16
+jupyter

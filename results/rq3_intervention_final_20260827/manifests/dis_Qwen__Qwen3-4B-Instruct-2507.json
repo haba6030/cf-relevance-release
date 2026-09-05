@@ -1,0 +1,33 @@
+{
+  "stage": "rq3-dis",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "tasks": [
+    2,
+    3
+  ],
+  "alphas": [
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "prompt_contract": "rq3-v2-raw-sequence-20260825",
+  "decoder_contract": "rq3-h3-context-r-vs-i-20260825",
+  "decoder_gate_file": "<REPO>/results/rq3_guide_intervention_k2_20260827/analysis/rq3a_context_decoder_robustness.csv",
+  "memory": {
+    "user_ceiling_mib": 24000,
+    "loader_budget_mib": 23000,
+    "peak_nvidia_mib": 15888,
+    "peak_device_nvidia_mib": 15897,
+    "peak_torch_allocated_mib": 15391.978515625,
+    "peak_torch_reserved_mib": 15690.0,
+    "device_map": {
+      "": "0"
+    },
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "torch_version": "2.9.1+cu128",
+    "transformers_version": "4.57.1",
+    "cuda_runtime": "12.8",
+    "gpu_name": "NVIDIA TITAN RTX"
+  }
+}
