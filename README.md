@@ -1,6 +1,8 @@
-# Conversational Relevance in the Conjunction Fallacy Is Represented in Language Models
+# Conversational Relevance in the Conjunction Fallacy Is Represented Independently in Language Models
 
-Code, stimuli, derived data and executed notebooks for the paper of the same title (anonymised for review).
+Code, stimuli, derived data and executed notebooks for the paper of the same title, by Jinil Kim and Jaejun Ryu
+(Seoul National University), presented at the NeurIPS 2026 Workshop on Linguistic Principles for Foundation Models
+(LP4FM). Paper: https://openreview.net/forum?id=aVWJk84zeg (non-archival).
 
 The paper asks whether the *conversational relevance* account of the conjunction fallacy holds in six open-weight
 language models: whether context raises the relevant conjunct (behaviour), whether relevance is a linearly decodable
@@ -14,11 +16,8 @@ produced those CSVs are included as scripts with their exact commands (Section 4
 
 ## 1. Quick start: reproduce every number in the paper
 
-Anonymous mirror for review: https://anonymous.4open.science/r/cf-relevance-release-DB25/ (browse or download; the same
-files are attached to the submission as supplementary material).
-
 ```bash
-# unpack the supplementary zip or the mirror's download, then from its root:
+git clone https://github.com/haba6030/cf-relevance-release.git && cd cf-relevance-release
 python3 -m pip install numpy pandas scipy scikit-learn matplotlib nbformat nbconvert jupyter
 python3 notebooks/build_notebooks.py --execute     # ~1 minute on a laptop, CPU only
 ```
@@ -185,13 +184,26 @@ the variance decomposition of the grid effect (item × model share), the retired
 $\cos(v_R, v_P)=.335$, the GPU-hours of the grid, and the exact cell set behind the grid's "0 of 20" manipulation
 check. Each would need the activations or logs listed above.
 
-## 6. Anonymity
+## 6. Path placeholders
 
-Paths, user names and the original repository URL were removed from every file before release (`<REPO>`, `<HOME>`,
-`<HF_CACHE>` placeholders). Comments and generated reports were translated into English. The
+This repository was first released anonymously for double-blind review. Paths, user names and the original repository
+URL were removed from every file at that time (`<REPO>`, `<HOME>`, `<HF_CACHE>` placeholders), and the placeholders are
+kept so the files match what the reviewers saw. Comments and generated reports were translated into English. The
 `_release_manifest.json` lists every file copied from the working repository.
 
 ## 7. Licence
 
 Code: MIT. Stimuli and derived data: CC BY 4.0, except the texts adapted from Chung et al. (2024) and
 Tentori et al. (2013) and the WikiText excerpt, which remain under their original terms (see `LICENSE`).
+
+## 8. Citation
+
+```bibtex
+@inproceedings{kim2026relevance,
+  title     = {Conversational Relevance in the Conjunction Fallacy Is Represented Independently in Language Models},
+  author    = {Kim, Jinil and Ryu, Jaejun},
+  booktitle = {NeurIPS 2026 Workshop on Linguistic Principles for Foundation Models (LP4FM)},
+  year      = {2026},
+  note      = {Non-archival}
+}
+```

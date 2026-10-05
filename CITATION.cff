@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or the item banks, please cite the paper."
+title: "Conversational Relevance in the Conjunction Fallacy Is Represented Independently in Language Models"
+authors:
+  - family-names: Kim
+    given-names: Jinil
+    affiliation: Seoul National University
+  - family-names: Ryu
+    given-names: Jaejun
+    affiliation: Seoul National University
+license: MIT
+repository-code: "https://github.com/haba6030/cf-relevance-release"
+preferred-citation:
+  type: conference-paper
+  title: "Conversational Relevance in the Conjunction Fallacy Is Represented Independently in Language Models"
+  authors:
+    - family-names: Kim
+      given-names: Jinil
+    - family-names: Ryu
+      given-names: Jaejun
+  collection-title: "NeurIPS 2026 Workshop on Linguistic Principles for Foundation Models (LP4FM)"
+  year: 2026
