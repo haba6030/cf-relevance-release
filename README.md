@@ -8,7 +8,7 @@ The paper asks whether the *conversational relevance* account of the conjunction
 language models: whether context raises the relevant conjunct (behaviour), whether relevance is a linearly decodable
 component of the residual stream that survives removing the posterior-probability and confirmation directions
 (representation), and whether editing that residual component changes the fallacy while leaving the evidential norms
-inside a preregistered margin (intervention and manipulation check).
+inside an equivalence margin fixed before the manipulation check (intervention and manipulation check).
 
 **Everything the paper reports can be recomputed here from the shipped CSVs without a GPU.** The GPU stages that
 produced those CSVs are included as scripts with their exact commands (Section 4), but their raw outputs
